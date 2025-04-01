@@ -25,4 +25,4 @@ This project was built **during my summer break** while I was learning web devel
 ### 🚀 How to Run the Project  
 1. **Clone the repository**:  
    ```sh
-   git clone https://github.com/your-username/abune-melke-tsedek-school.git
+   git clone https://github.com/mahitile/abune-melke-tsedek-school.git
