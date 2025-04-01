@@ -1,0 +1,146 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+header {
+  background-color: #0056b3;
+  color: white;
+  padding: 15px 0;
+}
+
+.containerx {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 110px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url("hero-image.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff6600;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.announcements {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+}
+
+.announcements h2 {
+  text-align: center;
+}
+
+footer {
+  background-color: #0056b3;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #2980b9;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+#vision-container {
+  background-color: #e8f4fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.vision-heading {
+  font-size: 28px;
+  color: #2980b9;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}

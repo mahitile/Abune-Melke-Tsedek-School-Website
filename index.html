@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" href="media/school-9.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="slides.css" />
+  </head>
+  <body>
+    <header>
+      <div class="containerx">
+        <div class="logo">
+          <img
+            src="media\IMG_20240816_113138_508.jpg"
+            width="160"
+            height="100"
+            alt="School Logo"
+            style="border-radius: 50%"
+          />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="faculty.html">Faculty and staff</a></li>
+            <li><a href="news.html">News and events</a></li>
+            <li><a href="photoGallery.html">Photo Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- Slideshow container -->
+      <section>
+        <div class="row slideshow-container">
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="media\IMG_20240814_182200_125.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="media/IMG_20240807_201830_376.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="media/IMG_20240807_201830_007.jpg" style="width: 100%" />
+          </div>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+      <div class="container">
+        <h1>
+          WELCOME TO ABUNE MELKE TSEDEQ PRIMARY AND GENERAL SECONDARY SCHOOL
+        </h1>
+      </div>
+
+      <div class="container">
+        <p>
+          We are delighted to welcome you to Ethiopia Orthodox Tewahdo Church
+          Mihur Eyesus Monastery Abune Melke Tsedeq Primary And General
+          Secondary school, where we foster a nurturing environment dedicated to
+          academic excellence and personal growth. Explore our site to learn
+          more about our programs, activities, and community.
+        </p>
+      </div>
+
+      <div class="container">
+        <h2>Our Mission</h2>
+        <p>
+          At Abune Melke Tsedeq School, our mission is to provide a holistic
+          education that empowers students to excel academically, socially, and
+          emotionally. We strive to create a supportive learning environment
+          that encourages curiosity, respect, and a lifelong love of learning.
+        </p>
+      </div>
+
+      <div id="vision-container" class="container">
+        <h2 class="vision-heading">Our Vision</h2>
+        <p>
+          At Abune Melke Tsedeq school, we envision a learning community where
+          every student is inspired to reach their full potential. We strive to
+          cultivate a nurturing environment that fosters curiosity, creativity,
+          and critical thinking skills. Our aim is to empower students to become
+          lifelong learners, compassionate leaders, and responsible global
+          citizens. Through innovative teaching methods, personalized support,
+          and a diverse range of opportunities.
+        </p>
+      </div>
+    </main>
+    <footer>
+      2024 ABUNE MELKE TSEDEQ SCHOOL. All rights reserved<i
+        class="fa fa-align-center"
+        aria-hidden="true"
+      ></i>
+    </footer>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>
